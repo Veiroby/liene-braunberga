@@ -414,8 +414,6 @@ a h3{
 
 
 
-
-
 .portfolio .portfolio-gallery .item .inner {
     position: relative;
     text-align: center;
@@ -433,21 +431,63 @@ a h3{
 
 @media (max-width: 768px) {
     
+
+    .inner-text,
+    .inner::after{
+       display: none;
+      
+    }
+    
+    .inner::after{
+        display: none;
+     
+    }
+    
+    .inner:hover::after{
+       display: none;
+       
+    }
+    
+    a h3{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.479);
+    }
+    
+    .inner-text {
+        padding: 20px;
+        margin-bottom: 200px;
+        bottom: 0;
+        z-index: 1;
+        transform: translateY(100px);
+        transition: all .3s cubic-bezier(.13,.63,.81,.91) 0s;
+        opacity: 0;
+        
+    }
+    
+    /* inner-text h3{
+    }
+    */
+    
+    .inner:hover .inner-text {
+        display: none;
+      
+    }
+
+
+
     .portfolio .portfolio-gallery .item {
         flex: 0 0 100%;
         max-width: 100%;
         position: relative;
         padding: 8px;
     }
+
+
+
 }
 
-@media (max-width: 768px) {
-    
-    .portfolio .portfolio-gallery .item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+
+
 
 
 
