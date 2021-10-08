@@ -204,7 +204,7 @@ section{
 content: "";
 width: 100%;
 height: 100%;
-position: absolute;
+
 top: 0;
 left: 0;
 
@@ -212,6 +212,16 @@ z-index: -1;
  
 }
 
+@media screen and (max-width: 768px) {
+
+.hero {
+    background-image: url(Images/maincover.jpg);
+    background-position: 0% 40%;
+    background-size: cover;
+
+}
+
+}
 
 
 
