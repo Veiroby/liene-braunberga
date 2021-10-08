@@ -424,16 +424,17 @@ a h3{
 
     .inner-text,
     .inner::after{
-       display: none;
-      
+        width: 100%;
+    position: absolute;
+    left: 0;
     }
     
     .inner::after{
-        display: none;
+      display: none;
      
     }
     
-    .inner:hover::after{
+    .inner:hover ::after{
        display: none;
        
     }
