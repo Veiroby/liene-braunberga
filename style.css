@@ -627,6 +627,18 @@ h5{
     opacity: 1;
 }
 
+
+.col {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+
+
 .footer ul{
 
     margin: 0;
@@ -648,7 +660,6 @@ h5{
 }
 
 .footer ul li{
-    display: inline-block;
     padding: 0.15px;
 }
 
@@ -657,9 +668,44 @@ h5{
     color: black;
 }
 
+
+
+
 .footer .copyright{
     margin-top: 20px;
     text-align: center;
     font-size: 13px;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        padding: 40px 0;
+        background-color: rgba(221, 199, 183, 0.178);
+        height: auto;
+    
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+.footer ul{
+
+    margin: 0;
+    padding-top: 2vh;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    
+}
+
 }
